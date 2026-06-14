@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #000619FF;
+}
+
+
+.titelEnIcoon {
+    display: flex;
+    margin: 20px 0 0 0;
+    gap: 10px;
+}
+
+.head-titel {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-family: "montserrat", sans-serif;
+}
+
+
+.nav-bar img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/*====inhoud====*/
+
+
+.titel {
+    display: flex;
+    color: #FFFFFF;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
+.introductie-schoolopdrachten {
+    font-size: 50px;
+}
+
+
+.titel-button {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-family: "montserrat", sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFFFF;
+}
+
+.containers{
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 0 0;
+}
+
+
+.artikel {
+    border-radius: 15px;
+    padding: 20px;
+    border: 5px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+
+.artikel:hover {
+    transform: scale(1.01);
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+
+    .titelEnIcoon img {
+        width: 30px;
+        height: 30px;
+        margin: 0 0 0 10px;
+    }
+
+    .head-titel {
+        display: none;
+    }
+
+    .introductie-schoolopdrachten {
+        display: flex;
+        text-align: center;
+        font-size: 30px;
+        margin: 20px 0 20px 0;
+    }
+    .button-container{
+        display: flex;
+        margin: 30px 20px;
+        justify-content: center;
+    }
+
+    .artikel {
+        padding: 40px;
+        border: 3px solid #fff;
+    }
+
+    .titel-button{
+        font-size: 30px;
+        text-align: center;
+        line-height: 1.2;
+    }
+}
+
+

@@ -1,0 +1,92 @@
+/* Hamburger standaard verbergen */
+.hamburger {
+    display: none;
+}
+
+.nav-background {
+    display: none;
+}
+
+
+/* Navbar lijst standaard voor desktop */
+.ul-nav {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobiel: onder 768px */
+@media (max-width: 768px) {
+
+    .nav-container {
+
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    /* Hamburger zichtbaar */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 10px 0 0;
+        top: 50px;
+        justify-content: space-between;
+        width: 35px;
+        height: 30px;
+    }
+
+
+    .hamburger span {
+        display: block;
+        height: 7px;
+        width: 100%;
+        border: 1px solid #FFFFFF;
+        background: #00081c;
+        border-radius: 15px;
+        transition: all 0.3s ease; /* zorgt voor animatie */
+    }
+
+
+    /* X animatie */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+
+}
+
+
+    /* Menu standaard verbergen */
+    .ul-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 20px; /* net onder navbar */
+        right: 0px;
+        background: rgba(0, 8, 28, 0.9);
+        padding: 20px;
+        border-radius: 15px;
+        gap: 20px;
+        z-index: 1000;
+    }
+
+    /* Menu zichtbaar wanneer actief */
+    .ul-nav.active {
+        display: flex;
+    }
+
+    .voorstelling-container {
+        display: flex;
+        margin: 5% 5% 5% 5%;
+    }
+
+}
