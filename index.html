@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage portfolio</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="global/hamburger.css">
     <script src="global/hamburger.js"></script>
-
 </head>
-
 
 <!--=============navigatie===========-->
 
 <body>
+
+<div class="background">
+    <div class="bg-glow1 glow-1"></div>
+    <div class="bg-glow2 glow-2"></div>
+</div>
 
 <header>
     <!-- hamburger icoon -->
@@ -23,169 +26,117 @@
         <span></span>
     </div>
     
-    <nav class="nav-container">
-        <ul class="ul-nav">
-            <li><a class="nav-link" href="#over-mij">Over mij</a></li>
-            <li><a class="nav-link" href="#projecten">Projecten</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
+    <div class="container">
+        <nav class="nav-container">
+            <div class="nav-logo"><img src="assets/favicon_wit.png" alt="favicon logo"></div>
+            <ul class="nav-list">
+                <li><a class="nav-link" href="#over-mij">Over mij</a></li>
+                <li><a class="nav-link" href="#projecten">Projecten</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 
 <main>
     <!--===========de voorstelling===========-->
     
-    <section class="voorstelling-container" id="over-mij">
-        <div class="ikbensavio">
-            Ik ben Savio
-        </div>
-        <div class="paragraafEnFoto">
-            <p class="intro-paragraaf">
+    <section class="about" id="over-mij">
+        
+        <div class="container">
+            
+            
+            <div class="about-content">
                 
-                Ik ben tweedejaarsstudent Digitale Vormgeving aan de PXL in Hasselt. Door creatief bezig te zijn haal
-                ik veel voldoening uit mijn werk.
-                <br>
-                <br>
-                Ik laat me graag inspireren door mijn verbeelding en gevoel voor vorm en kleur.
-                <br>
-                <br>
-                Met deze portfolio geef ik een eerste blik op mijn groei als ontwerper. Je vindt hier projecten waarin
-                ik mijn passie voor digitale ontwerp stap voor stap ontwikkel, met oog voor detail en een open blik naar
-                nieuwe stijlen en technieken.
-                <br>
-                <br>
-                Neem gerust een kijkje en ontdek waar ik de voorbije tijd aan heb gewerkt!
-            </p>
-            <img class="profielfoto" src="assets/profielfoto.png" alt="profielfoto">
+                <div class="about-text">
+                    
+                    <h1 class="about-title">
+                        Ik ben Savio
+                    </h1>
+                    <p>
+                        18-jarige student grafische vormgeving aan PXL in Hasselt.
+                        Creativiteit staat centraal in alles wat ik doe. Ik werk graag
+                        met visuele ideeën en laat mijn fantasie tot leven komen in mijn ontwerpen.
+                    </p>
+                    <br>
+                    <p>
+                        Mijn doel is om mij verder te ontwikkelen als grafisch designer en mijn creativiteit
+                        om te zetten in sterke, doordachte projecten.
+                    </p>
+                    
+                    <p>
+                        Bekijk mijn portfolio en ontdek waar ik aan heb gewerkt.
+                    </p>
+                    
+                    <a href="#projecten" class="cta-button">Bekijk mijn werk</a>
+                
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-glow"></div>
+                    <img src="assets/profielfoto.png" alt="Profielfoto Savio">
+                </div>
+            
+            
+            </div>
+        
         </div>
+    
     </section>
     
     
-    <!--=============== "projecten" tussentitel ================-->
+    <!--projecten-->
     
-    <section id="projecten">
-        <p class="tussentitel">Projecten</p>
-    </section>
-    
-    
-    
-    
-    <section class="section-kleur">
-        <section class="project-tussentitel-donker">
-            <h1 id="(school)projecten">
-                samenwerkingen
-            </h1>
-        </section>
-        
-        
-        <!--============== orbis linguae ===============-->
-        
-        <div class="artikel-container" id="orbis_linguae">
-            <a href="jaar_1/Orbis_linguae/orbis_linguae.html" class="link-artikel">
-                <article class="artikel_wit">
-                    <div class="artikel-content">
-                        <div class=" img-wrapper">
-                            <img class="orbis" src="/assets/orbis_linguae_logo.png"
-                                 alt="photoshop met visuals">
+    <section class="project-section" id="projecten">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Uitgelichte projecten</h2>
+            </div>
+            
+            
+            <!--============== orbis linguae ===============-->
+            <div class="projects">
+                <article class="project-card">
+                    <a href="jaar_1/Orbis_linguae/orbis_linguae.html" class="project-link">
+                        <div class="project-image">
+                            <img src="assets/orbis_linguae_logo_wit.png" alt="Orbis Linguae logo">
                         </div>
-                        <div class="artikel-info">
-                            <h3 class="titel-project">Orbis Linguae logo</h3>
-                            
-                            <p class="uitleg-project">
-                                Een zelf ontworpen logo dat ik gemaakt heb voor een masterstudent haar (tijdelijke)
-                                bedrijf voor
-                                een schoolopdracht.
-                            </p>
+                        
+                        <div class="project-info">
+                            <h3 class="project-title">Orbis Linguae</h3>
                         </div>
-                    </div>
+                    </a>
                 </article>
-            </a>
-        </div>
-        
-        
-        <!--============== victory ===============-->
-        
-        <div class=" artikel-container" id="victory">
-            <a href="jaar_1/victory/victory.html" class="link-artikel" >
-                <article class="artikel_wit">
-                    <div class="artikel-content">
+                <!--============== victory ===============-->
+                <article class="project-card">
+                    <a href="jaar_1/victory/victory.html" class="project-link">
                         
-                        <div class="img-wrapper">
-                            <img class="foto-inKader" src="/assets/vinkje_logo_victory.png" alt="Het logo van Victory">
+                        <div class="project-image">
+                            <img src="assets/vinkje_logo_victory%20(wit).png" alt="Het logo van Victory">
                         </div>
                         
-                        <div class="artikel-info">
-                            <h3 class="titel-project">Victory</h3>
-                            <div class="artikel-info">
-                                <p class="uitleg-project">
-                                    Benieuwd hoe een krachtig en toekomstgericht merkverhaal tot leven komt?
-                                    Laat je inspireren door het brandbook dat ik samen met mijn team ontwikkelde voor
-                                    de rebranding van het bedrijf Victory.
-                                </p>
-                            </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Victory</h3>
                         </div>
-                    </div>
+                    </a>
                 </article>
-            </a>
-        </div>
-        
-        
-        <!--============== boostbites ===============-->
-        
-        <div class="artikel-container" id="boostbites">
-            <a href="jaar_1/boostbites/boostbites.html" class="link-artikel">
-                <article class="artikel_wit">
-                    <div class="artikel-content">
+                <!--============== boostbites ===============-->
+                <article class="project-card">
+                    <a href="jaar_1/boostbites/boostbites.html" class="project-link">
                         
-                        <div class="img-wrapper">
-                            <img class="foto-inKader" src="/assets/boostlogo.png"
+                        <div class="project-image">
+                            <img src="assets/boostbites_wit.png"
                                  alt="Zelfgemaakte illustratie van een soda drankje">
                         </div>
                         
-                        <div class="artikel-info">
-                            <h3 class="titel-project"> boost bites logo</h3>
-                            
-                            <p class="uitleg-project">
-                                Maak kennis met het allereerste project dat ik voor een start-up heb gerealiseerd in
-                                het eerste academie jaar Digitale Vormgeving.
-                            </p>
+                        <div class="project-info">
+                            <h3 class="project-title"> boost bites</h3>
                         </div>
-                    </div>
+                    </a>
                 </article>
-            </a>
-        </div>
-    </section>
-    
-    
-    <!--========== school ==============-->
-    
-    
-    <section class="artikel-section">
-        
-        <section class="project-tussentitel-licht">
-            <h1>
-                Schoolopdrachten
-            </h1>
-        </section>
-        
-        
-        <div class="artikel-container" id="schoolkeuze">
-            <a class="link-artikel" href="schoolkeuzepagina/schoolkeuzemenu.html" >
-                <article class="artikel_dnkerblauw">
-                    <div class=" img-wrapper">
-                        <img class="wpl_img" src="/assets/afstudeerhoed.png"
-                             alt="photoshop met visuals">
-                    </div>
-                    <div class="artikel-info">
-                        <p class="uitleg-project">
-                            Benieuwd naar wat ik heb geleerd en ontwikkeld tijdens mijn schoolcarriére? Bekijk dan
-                            mijn
-                            projecten van Campus de Helix en Hogeschool PXL!
-                    </div>
-                </article>
-            </a>
+            
+            </div>
         </div>
     </section>
     
@@ -193,156 +144,180 @@
     <!--contactsection-->
     
     <section class="contact-section" id="contact">
-        <div class="contact-titel">
-            <h2>Contact</h2>
-        </div>
-        
-        <p class="contact-paragraaf">
-            Als u graag contact wilt opnemen, kunt u dat via de volgende kanalen:
-        </p>
-        
-        <div class="contactInfo-container">
-            <a href="https://www.instagram.com/Savio_Ferraris/" target="_blank">
-                <div class="info-gegevens">
-                    <img class="instagram-icoon" src="/assets/instagram-icoon.png" alt="Instagram icoon">
-                    <p>savio_ferraris</p>
-                    <img class="external-icon" src="/assets/external-link-svgrepo-com.png" alt="external icoon">
+        <div class="container">
+            <div class="contact-content">
+                
+                <div class="contact-header">
+                    <h2 class="contact-title">Contacteer mij</h2>
+                    <p class="contact-description">Heb je interesse om samen te werken of heb je
+                        een vraag? Neem gerust contact met mij op.</p>
                 </div>
-            </a>
-            
-            <a href="mailto:savio.ferraris@student.pxl.be">
-                <div class="info-gegevens">
-                    <img class="mail-icoon" src="/assets/email-icoon.png" alt="Email icoon">
-                    <p>savio.ferraris@student.pxl.be</p>
-                    <img class="external-icon" src="/assets/external-link-svgrepo-com.png" alt="external icoon">
-                </div>
-            </a>
-        </div>
-        
-        <footer class="copyright">
-            <p>&copy; 2025 Savio Ferraris</p>
-        </footer>
-            
-        
-        
-        
-        
-            <div class="privacy-linktitel">
-                <a href="#" onclick="document.getElementById('privacyOverlay').style.display='block'">
-                    Privacybeleid
-                </a>
+                
+                <form class="contact-form">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Voornaam</label>
+                            <input type="text" name="voornaam" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Achternaam</label>
+                            <input type="text" name="achternaam" required>
+                        </div>
+                    </div>
+                    
+                    <!-- FIX HIER -->
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Bericht</label>
+                        <textarea name="bericht" required></textarea>
+                    </div>
+                    
+                    <button type="submit">Verzenden</button>
+                    
+                    <p id="form-status"></p>
+                
+                </form>
             </div>
-            
-            <div id="privacyOverlay" class="overlay">
-                <div class="pop-upkader">
+        </div>
+    </section>
+    
+    
+    <div class="contactInfo-container">
+        <a href="https://www.instagram.com/Savio_Ferraris/" target="_blank">
+            <div class="info-gegevens">
+                <img class="instagram-icoon" src="/assets/instagram-icoon.png" alt="Instagram icoon">
+                <p>savio_ferraris</p>
+                <img class="external-icon" src="/assets/external-link-svgrepo-com.png" alt="external icoon">
+            </div>
+        </a>
+    </div>
+    <footer class="copyright">
+        <p>&copy; 2025 Savio Ferraris</p>
+    </footer>
+    
+    
+    <div class="privacy-linktitel">
+        <a href="#" onclick="document.getElementById('privacyOverlay').style.display='block'">
+            Privacybeleid
+        </a>
+    </div>
+    
+    <div id="privacyOverlay" class="overlay">
+        <div class="pop-upkader">
         <span class="sluitknop"
               onclick="document.getElementById('privacyOverlay').style.display='none'">&times;</span>
+            
+            <h2 class="privacybeleid-titel">Privacybeleid</h2>
+            <p class="privacytekst">
+                <strong>Privacyrichtlijnen voor Mijn Portfolio</strong><br>
+                <br>
+                Welkom bij mijn portfolio. Ik waardeer je bezoek en respecteer je privacy.
+                Dit document legt uit hoe ik omga met persoonlijke gegevens die mogelijk worden verzameld
+                wanneer je mijn portfolio gebruikt.
+                Door mijn portfolio te bezoeken, stem je in met deze richtlijnen.
+            </p>
+            <br>
+            <br>
+            <ol class="privacytekst">
+                <li>
+                    <strong>Hoe ik je gegevens gebruik</strong>
                     
-                    <h2 class="privacybeleid-titel">Privacybeleid</h2>
-                    <p class="privacytekst">
-                        <strong>Privacyrichtlijnen voor Mijn Portfolio</strong><br>
+                    <p>
+                        De gegevens die ik verzamel, gebruik ik uitsluitend voor:
                         <br>
-                        Welkom bij mijn portfolio. Ik waardeer je bezoek en respecteer je privacy.
-                        Dit document legt uit hoe ik omga met persoonlijke gegevens die mogelijk worden verzameld
-                        wanneer je mijn portfolio gebruikt.
-                        Door mijn portfolio te bezoeken, stem je in met deze richtlijnen.
+                        <br>
+                    <ul>
+                        <li>het verbeteren van de toegankelijkheid</li>
+                        <li>prestaties en functionaliteit van mijn portfolio</li>
+                        <li> het beantwoorden van vragen via mijn contactformulier of e-mail</li>
+                        <li>en het analyseren van gebruik om de inhoud te optimaliseren.</li>
+                    </ul>
+                    <br>
+                    Ik gebruik je gegevens niet voor commerciële doeleinden of marketing zonder jouw
+                    toestemming.
                     </p>
-                    <br>
-                    <br>
-                    <ol class="privacytekst">
-                        <li>
-                            <strong>Hoe ik je gegevens gebruik</strong>
-                            
-                            <p>
-                                De gegevens die ik verzamel, gebruik ik uitsluitend voor:
-                                <br>
-                                <br>
-                            <ul>
-                                <li>het verbeteren van de toegankelijkheid</li>
-                                <li>prestaties en functionaliteit van mijn portfolio</li>
-                                <li> het beantwoorden van vragen via mijn contactformulier of e-mail</li>
-                                <li>en het analyseren van gebruik om de inhoud te optimaliseren.</li>
-                            </ul>
-                            <br>
-                            Ik gebruik je gegevens niet voor commerciële doeleinden of marketing zonder jouw
-                            toestemming.
-                            </p>
-                        </li>
-                        <br>
-                        <br>
-                        
-                        
-                        <li>
-                            <strong>Geen verkoop of delen van gegevens</strong>
-                            <p>
-                                Ik verkoop, deel of verhandel je persoonlijke gegevens niet met derden.
-                                Alleen vertrouwde partners, zoals hostingproviders of analytische tools, kunnen toegang
-                                hebben
-                                tot
-                                bepaalde gegevens en zijn verplicht om deze te beschermen.
-                            </p>
-                        </li>
-                        <br>
-                        <br>
-                        <li>
-                            <strong>Externe links en ingesloten inhoud</strong>
-                            <p>
-                                Mijn portfolio kan links bevatten naar externe websites of ingesloten inhoud (zoals
-                                video's
-                                en
-                                sociale
-                                mediafeeds). Deze bronnen hebben hun eigen privacybeleid.
-                                Ik raad aan hun richtlijnen te lezen. Ik ben niet verantwoordelijk voor hun omgang met
-                                gegevens.
-                            </p>
-                        </li>
-                        <br>
-                        <br>
-                        <li>
-                            <strong>Hoe ik je gegevens bescherm</strong>
-                            <p>
-                                Ik neem technische en organisatorische maatregelen om gegevens te beveiligen tegen
-                                verlies,
-                                misbruik en
-                                ongeoorloofde toegang. Denk aan veilige hosting en versleutelde verbindingen.
-                                Absolute bescherming kan ik echter niet garanderen.
-                            </p>
-                        </li>
-                        <br>
-                        <br>
-                        <li>
-                            <strong>Jouw rechten</strong>
-                            <ul>
-                                <li>Toegang vragen tot de gegevens die ik van je heb.</li>
-                                <li>Het corrigeren of verwijderen van jouw gegevens.</li>
-                                <li>Bezwaar maken tegen het gebruik van jouw gegevens.</li>
-                            </ul>
-                        </li>
-                        <br>
-                        <br>
-                        <li>
-                            <strong>Wijzigingen in dit beleid</strong>
-                            <p>
-                                Ik behoud me het recht voor om deze richtlijnen te wijzigen om te voldoen aan nieuwe
-                                wetgeving
-                                of om mijn werkwijze te verbeteren.
-                                Belangrijke wijzigingen worden duidelijk gecommuniceerd.
-                                Controleer deze pagina regelmatig om op de hoogte te blijven.
-                            </p>
-                        </li>
-                    </ol>
-                    <br>
-                    <br>
-                    <p class="privacytekst">
-                        Voor vragen of verzoeken, neem contact met mij op via het e-mail:<br>
-                        <strong>email:</strong> savio.ferraris@student.pxl.be
+                </li>
+                <br>
+                <br>
+                
+                
+                <li>
+                    <strong>Geen verkoop of delen van gegevens</strong>
+                    <p>
+                        Ik verkoop, deel of verhandel je persoonlijke gegevens niet met derden.
+                        Alleen vertrouwde partners, zoals hostingproviders of analytische tools, kunnen toegang
+                        hebben
+                        tot
+                        bepaalde gegevens en zijn verplicht om deze te beschermen.
                     </p>
-                    <br>
-                    <br>
-                    <p class="bewerkdatum">Laatst bijgewerkt op: 8/08/2025</p>
-                </div>
-            </div>
-        </section>
+                </li>
+                <br>
+                <br>
+                <li>
+                    <strong>Externe links en ingesloten inhoud</strong>
+                    <p>
+                        Mijn portfolio kan links bevatten naar externe websites of ingesloten inhoud (zoals
+                        video's
+                        en
+                        sociale
+                        mediafeeds). Deze bronnen hebben hun eigen privacybeleid.
+                        Ik raad aan hun richtlijnen te lezen. Ik ben niet verantwoordelijk voor hun omgang met
+                        gegevens.
+                    </p>
+                </li>
+                <br>
+                <br>
+                <li>
+                    <strong>Hoe ik je gegevens bescherm</strong>
+                    <p>
+                        Ik neem technische en organisatorische maatregelen om gegevens te beveiligen tegen
+                        verlies,
+                        misbruik en
+                        ongeoorloofde toegang. Denk aan veilige hosting en versleutelde verbindingen.
+                        Absolute bescherming kan ik echter niet garanderen.
+                    </p>
+                </li>
+                <br>
+                <br>
+                <li>
+                    <strong>Jouw rechten</strong>
+                    <ul>
+                        <li>Toegang vragen tot de gegevens die ik van je heb.</li>
+                        <li>Het corrigeren of verwijderen van jouw gegevens.</li>
+                        <li>Bezwaar maken tegen het gebruik van jouw gegevens.</li>
+                    </ul>
+                </li>
+                <br>
+                <br>
+                <li>
+                    <strong>Wijzigingen in dit beleid</strong>
+                    <p>
+                        Ik behoud me het recht voor om deze richtlijnen te wijzigen om te voldoen aan nieuwe
+                        wetgeving
+                        of om mijn werkwijze te verbeteren.
+                        Belangrijke wijzigingen worden duidelijk gecommuniceerd.
+                        Controleer deze pagina regelmatig om op de hoogte te blijven.
+                    </p>
+                </li>
+            </ol>
+            <br>
+            <br>
+            <p class="privacytekst">
+                Voor vragen of verzoeken, neem contact met mij op via het e-mail:<br>
+                <strong>email:</strong> savio.ferraris@student.pxl.be
+            </p>
+            <br>
+            <br>
+            <p class="bewerkdatum">Laatst bijgewerkt op: 8/08/2025</p>
+        </div>
+    </div>
+    </section>
 </main>
 </body>
 </html>
