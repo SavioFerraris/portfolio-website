@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="global/hamburger.css">
     <script src="global/hamburger.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <!--=============navigatie===========-->
@@ -214,53 +215,46 @@
             <div class="footer-bottom">
                 <p class="footer-copy">&copy; 2025 Savio Ferraris</p>
                 <div class="privacy-button">
-                    <a href="#" onclick="document.getElementById('privacyOverlay').style.display='block'">
+                    
+                    <a href="#" onclick="openModal(); return false;">
                         Privacybeleid
                     </a>
+                
                 </div>
             </div>
         </div>
     </footer>
     
     
-    <div id="privacyOverlay" class="overlay">
-        <div class="pop-upkader">
-        <span class="sluitknop"
-              onclick="document.getElementById('privacyOverlay').style.display='none'">&times;</span>
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content" tabindex="0">
             
-            <h2 class="privacybeleid-titel">Privacybeleid</h2>
-            <p class="privacytekst">
-                <strong>Privacyrichtlijnen voor Mijn Portfolio</strong><br>
-                <br>
+            <span class="modal-close" onclick="closeModal()">×</span>
+            <h2 class="modal-title">Privacybeleid</h2>
+            <p class="modal-intro">
+                <strong>Privacyrichtlijnen voor Mijn Portfolio</strong>
                 Welkom bij mijn portfolio. Ik waardeer je bezoek en respecteer je privacy.
                 Dit document legt uit hoe ik omga met persoonlijke gegevens die mogelijk worden verzameld
                 wanneer je mijn portfolio gebruikt.
                 Door mijn portfolio te bezoeken, stem je in met deze richtlijnen.
             </p>
-            <br>
-            <br>
-            <ol class="privacytekst">
+            <ol class="modal-list">
                 <li>
                     <strong>Hoe ik je gegevens gebruik</strong>
                     
                     <p>
                         De gegevens die ik verzamel, gebruik ik uitsluitend voor:
-                        <br>
-                        <br>
+                    
                     <ul>
                         <li>het verbeteren van de toegankelijkheid</li>
                         <li>prestaties en functionaliteit van mijn portfolio</li>
                         <li> het beantwoorden van vragen via mijn contactformulier of e-mail</li>
                         <li>en het analyseren van gebruik om de inhoud te optimaliseren.</li>
                     </ul>
-                    <br>
                     Ik gebruik je gegevens niet voor commerciële doeleinden of marketing zonder jouw
                     toestemming.
                     </p>
                 </li>
-                <br>
-                <br>
-                
                 
                 <li>
                     <strong>Geen verkoop of delen van gegevens</strong>
@@ -272,8 +266,6 @@
                         bepaalde gegevens en zijn verplicht om deze te beschermen.
                     </p>
                 </li>
-                <br>
-                <br>
                 <li>
                     <strong>Externe links en ingesloten inhoud</strong>
                     <p>
@@ -286,8 +278,6 @@
                         gegevens.
                     </p>
                 </li>
-                <br>
-                <br>
                 <li>
                     <strong>Hoe ik je gegevens bescherm</strong>
                     <p>
@@ -298,41 +288,30 @@
                         Absolute bescherming kan ik echter niet garanderen.
                     </p>
                 </li>
-                <br>
-                <br>
                 <li>
                     <strong>Jouw rechten</strong>
                     <ul>
-                        <li>Toegang vragen tot de gegevens die ik van je heb.</li>
-                        <li>Het corrigeren of verwijderen van jouw gegevens.</li>
-                        <li>Bezwaar maken tegen het gebruik van jouw gegevens.</li>
+                        <li>Toegang vragen.</li>
+                        <li>Gegevens aanpassen of verwijderen.</li>
+                        <li>Bezwaar maken.</li>
                     </ul>
                 </li>
-                <br>
-                <br>
                 <li>
-                    <strong>Wijzigingen in dit beleid</strong>
+                    <strong>Wijzigingen</strong>
                     <p>
-                        Ik behoud me het recht voor om deze richtlijnen te wijzigen om te voldoen aan nieuwe
-                        wetgeving
-                        of om mijn werkwijze te verbeteren.
-                        Belangrijke wijzigingen worden duidelijk gecommuniceerd.
-                        Controleer deze pagina regelmatig om op de hoogte te blijven.
-                    </p>
+                        Dit beleid kan aangepast worden. Controleer deze pagina regelmatig. </p>
                 </li>
             </ol>
-            <br>
-            <br>
-            <p class="privacytekst">
-                Voor vragen of verzoeken, neem contact met mij op via het e-mail:<br>
+            <p class="modal-contact">
+                Voor vragen of verzoeken, neem contact met mij op via het contactformulier of het volgende email:<br>
                 <strong>email:</strong> savio.ferraris@student.pxl.be
             </p>
-            <br>
-            <br>
-            <p class="bewerkdatum">Laatst bijgewerkt op: 8/08/2025</p>
+            <p class="modal-date">Laatst bijgewerkt op: 8/08/2025</p>
         </div>
     </div>
-    </section>
+    
+
+
 </main>
 </body>
 </html>

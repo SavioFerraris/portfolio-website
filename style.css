@@ -432,389 +432,91 @@ header {
     filter: brightness(0) invert(1)
 }
 
+/* ===== Modal ======*/
 
-.copyright {
-    display: flex;
-    justify-content: center;
-    font-family: "open sans", sans-serif;
-    font-size: 25px;
-    color: #000619FF
-}
-
-
-/* ===== pop-up ======*/
-
-
-.privacy-linktitel a {
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-    color: #000619FF;
-    display: flex;
-    justify-content: right;
-    font-size: 18px;
-}
-
-
-.privacybeleid-titel {
-    display: flex;
-    justify-content: center;
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 20px;
-    font-size: 30px;
-}
-
-
-/* Achtergrond-overlay */
-
-.overlay {
+#privacy-modal{
     display: none;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 5, 32, 0.73); /* transparante donkere achtergrond */
-    z-index: 1000;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
 
 
 }
-
-.overlay p, ol {
-    font-size: 18px;
-
-    margin: 0 0 0 20px;
-}
-
-
-/* Het kader zelf */
-
-.pop-upkader {
-    background: rgb(7, 0, 50);
-    width: 100%;
-    max-width: 800px;
-    max-height: 80vh; /* Nieuw: maximaal 80% van het scherm in hoogte */
-    margin: 10% auto;
-    padding: 20px;
+.modal-content{
+    position: relative;
     border-radius: 15px;
-    box-shadow: 0 0 20px rgba(133, 142, 255, 0.47);
+    width: 70%;
+    max-height: 600px;
     overflow-y: auto;
-    color: white;
-    font-family: "open sans", sans-serif;
-    border: 1px solid #bec3ff;
+    padding: 30px;
+    line-height: 1.6;
+    font-family: "poppins", sans-serif;
+
+    backdrop-filter: blur(8px);
+    background: rgba(20, 20, 40, 0.7);
+
 }
 
+.modal-content::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba(58, 58, 104, 0);
+    border-radius: 10px;
+}
+.modal-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px
+}
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
 
-.sluitknop {
-    float: right;
-    font-size: 20px;
+.modal-close{
+    position: absolute;
+    top: 0;
+    right: 50px;
+    font-size: 40px;
+    color: white;
     cursor: pointer;
 }
-
-.bewerkdatum {
-    font-size: 15px;
-    font-weight: lighter;
+.modal-title{
+    color: white;
+}
+.modal-intro{
+    color: white;
+    margin: 0 0 20px 0;
+}
+.modal-list li{
+    margin-bottom: 15px;
+    color: white;
+}
+.modal-list ul{
+    margin: 10px 0 0 0;
+    padding: 0 0 0 20px;
+}
+.modal-contact{
+    color: white;
+}
+.modal-date{
+    color: white;
 }
 
-/* Scrollbar breedte */
-
-.pop-upkader::-webkit-scrollbar {
-    width: 10px;
+body.modal-open {
+    overflow: hidden;
+    height: 100vh;
 }
 
-/* Scrollbar achtergrond (spoor) */
 
-.pop-upkader::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-}
 
-/* Scrollbar duim (het schuifje) */
-
-.pop-upkader::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 15px;
-    transition: background-color 0.3s ease;
-}
-
-/* Hover-effect op duim */
-
-.pop-upkader::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.6);
-}
 
 
 /* ========== Responsive Design voor mobiel ========== */
-@media (max-width: 768px) {
-
-    .voorstelling-container {
-        margin: 80px 20px 0 20px;
-        gap: 30px;
-    }
-
-    .ikbensavio {
-        display: flex;
-        justify-content: center;
-        color: #fff;
-        font-family: "montserrat", sans-serif;
-        font-size: 40px;
-        font-weight: bold;
-    }
-
-    .paragraafEnFoto {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-
-    .intro-paragraaf {
-        font-size: 15px;
-        width: 90%;
-    }
-
-    .profielfoto {
-        width: 200px;
-    }
-
-    .tussentitel {
-        font-size: 40px;
-        margin: 150px 0 40px 0;
-        text-align: center;
-    }
-
-
-    .project-tussentitel-donker,
-    .project-tussentitel-licht {
-        margin-left: 20px;
-        font-size: 20px;
-    }
-
-
-    .artikel-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .foto-inKader,
-    .tekst-kader {
-        width: 120px;
-        height: auto;
-    }
-
-    .wpl_img {
-        display: flex;
-        width: 120px;
-        height: auto;
-    }
-
-    .uitleg-project {
-        font-size: 20px;
-        margin: 20px 0 0 0;
-    }
-
-    .titel-project {
-        display: flex;
-        justify-content: center;
-        font-size: 20px;
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    .contact-section {
-        font-family: "montserrat", sans-serif;
-        font-size: 30px;
-        padding: 50px 50px 10px 50px;
-        margin: 0;
-    }
-
-
-    .contact-titel {
-        color: #000619FF;
-        font-size: 18px;
-        margin: -20px 0 10px -20px;
-    }
-
-    .contact-paragraaf {
-        color: #000619FF;
-        margin: 0 0 25px -20px;
-        font-size: 12px;
-    }
-
-    .info-gegevens {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 15px;
-        font-size: 10px;
-        color: #000619FF;
-    }
-
-
-    .info-gegevens p {
-        font-family: "open sans", sans-serif;
-        display: flex;
-        flex-direction: row;
-        color: #000619FF;
-        font-size: 15px;
-    }
-
-    .contactInfo-container {
-        display: flex;
-        flex-direction: column;
-        margin: 0 0 25px -20px;
-    }
-
-    .contactInfo-container a {
-        text-decoration: none;
-        color: #000619FF
-    }
-
-
-    .telefoon-icoon, .mail-icoon, .instagram-icoon {
-        width: 20px;
-    }
-
-
-    .external-icon {
-        width: 10px;
-        height: 10px;
-        display: inline-block;
-    }
-
-    .copyright {
-        display: flex;
-        justify-content: center;
-        font-family: "open sans", sans-serif;
-        font-size: 15px;
-        color: #000619FF
-    }
-
-    .privacy-linktitel a {
-        font-family: "Montserrat", sans-serif;
-        text-decoration: none;
-        color: #000619FF;
-        display: flex;
-        justify-content: right;
-        font-size: 12px;
-        margin: 10px 0 0 0;
-    }
-
-    .privacy-popup a {
-        font-family: "Montserrat", sans-serif;
-        text-decoration: none;
-        font-size: 12px;
-        color: white;
-        margin: 0 20px 20px 0;
-        display: flex;
-        justify-content: right;
-    }
-
-    .privacybeleid-titel {
-        display: flex;
-        font-size: 26px;
-        justify-content: center;
-        font-family: "Montserrat", sans-serif;
-        margin-bottom: 25px;
-        font-weight: 600;
-        text-align: center;
-    }
-
-    .privacytekst {
-        width: 200px;
-        margin-bottom: 20px;
-        font-size: 15px;
-    }
-
-    .privacytekst li {
-        margin-left: 10px;
-    }
-
-    .privacytekst ul,
-    .privacytekst ol {
-        margin: 10px 0 20px 0;
-        padding: 0;
-    }
-
-    .privacytekst strong {
-        margin-bottom: 10px;
-        color: #dbdbff;
-        font-size: 16px;
-        font-weight: 600;
-    }
-
-
-    .bewerkdatum {
-        font-size: 10px;
-        font-weight: lighter;
-        color: #ccc;
-        text-align: right;
-    }
-
-
-    /* Achtergrond-overlay */
-    .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1000;
-        background: rgba(0, 5, 32, 0.73);
-        display: none;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        box-sizing: border-box;
-
-    }
-
-    .pop-upkader {
-        background: rgb(7, 0, 50);
-        width: 100%;
-        max-width: 700px;
-        max-height: 80vh;
-        border-radius: 15px;
-        font-family: "open sans", sans-serif;
-        overflow-y: auto;
-        line-height: 1.6;
-    }
-
-
-    /* Sluitknop rechtsboven */
-    .sluitknop {
-        float: right;
-        font-size: 28px;
-        margin: -20px 0 0 -50px;
-        font-weight: bold;
-        transition: color 0.2s;
-    }
-
-
-    /* Scrollbar breedte */
-    .pop-upkader::-webkit-scrollbar {
-        width: 5px;
-    }
-
-    /* Scrollbar achtergrond (spoor) */
-    .pop-upkader::-webkit-scrollbar-track {
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-    }
-
-    /* Scrollbar duim (het schuifje) */
-    .pop-upkader::-webkit-scrollbar-thumb {
-        background: rgba(255, 255, 255, 0.3);
-        border-radius: 15px;
-        transition: background-color 0.3s ease;
-    }
-
-    /* Hover-effect op duim */
-    .pop-upkader::-webkit-scrollbar-thumb:hover {
-        background: rgba(255, 255, 255, 0.6);
-    }
-}
-
-
-
+@media (max-width: 768px) {}
 
 
 
