@@ -1,24 +1,21 @@
-const modal = document.getElementById("privacy-modal");
-const content = document.querySelector(".modal-content");
+function initModal() {
+    const modal = document.getElementById("privacy-modal");
+    const content = document.querySelector(".modal-content");
 
-function openModal() {
-    modal.style.display = "flex";
-    document.body.classList.add("modal-open");
-    content.focus();
-}
-
-function closeModal() {
-    modal.style.display = "none";
-    document.body.classList.remove("modal-open");
-}
-
-modal.addEventListener("click", function (e) {
-    if (e.target === modal) {
-        closeModal();
+    window.openModal = function() {
+        modal.style.display = "flex";
+        document.body.classList.add("modal-open");
+        content.focus();
     }
-});
 
+    window.closeModal = function() {
+        modal.style.display = "none";
+        document.body.classList.remove("modal-open");
+    }
 
-window.onload = function () {
-    window.scrollTo(0, 0);
-};
+    modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+}

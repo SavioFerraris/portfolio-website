@@ -1,0 +1,76 @@
+#privacy-modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+
+
+}
+.modal-content{
+    position: relative;
+    border-radius: 15px;
+    width: 70%;
+    max-height: 600px;
+    overflow-y: auto;
+    padding: 30px;
+    line-height: 1.6;
+    font-family: "poppins", sans-serif;
+
+    backdrop-filter: blur(8px);
+    background: rgba(20, 20, 40, 0.7);
+
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba(58, 58, 104, 0);
+    border-radius: 10px;
+}
+.modal-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px
+}
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.modal-close{
+    position: absolute;
+    top: 0;
+    right: 50px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.modal-title{
+    color: white;
+}
+.modal-intro{
+    color: white;
+    margin: 0 0 20px 0;
+}
+.modal-list li{
+    margin-bottom: 15px;
+    color: white;
+}
+.modal-list ul{
+    margin: 10px 0 0 0;
+    padding: 0 0 0 20px;
+}
+.modal-contact{
+    color: white;
+}
+.modal-date{
+    color: white;
+}
+
+body.modal-open {
+    overflow: hidden;
+    height: 100vh;
+}

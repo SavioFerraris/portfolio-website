@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="global/hamburger.css">
     <script src="global/hamburger.js"></script>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="header/header.css">
+    <link rel="stylesheet" href="footer/footer.css">
+    <script src="layout.js"></script>
+    <link rel="stylesheet" href="modal/modal.css">
 </head>
 
 <!--=============navigatie===========-->
 
 <body>
-
+<div id="header-container"></div>
 <div class="background">
     <div class="bg-glow1 glow-1"></div>
     <div class="bg-glow2 glow-2"></div>
@@ -21,28 +25,8 @@
 
 </div>
 
-<header>
-    <!-- hamburger icoon -->
-    <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    
-    <div class="container">
-        <nav class="nav-container">
-            <div class="nav-logo"><img src="assets/favicon_wit.png" alt="favicon logo"></div>
-            <ul class="nav-list">
-                <li><a class="nav-link" href="#over-mij">Over mij</a></li>
-                <li><a class="nav-link" href="#projecten">Projecten</a></li>
-                <li><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-
 <main>
+    <div id="modal-container"></div>
     <!--===========de voorstelling===========-->
     
     <section class="about" id="over-mij">
@@ -77,7 +61,6 @@
                 </div>
                 
                 <div class="about-image">
-                    <div class="image-glow"></div>
                     <img src="assets/profielfoto.png" alt="Profielfoto Savio">
                 </div>
             
@@ -97,51 +80,43 @@
                 <h2 class="section-title">Uitgelichte projecten</h2>
             </div>
             
-            
-            <!--============== orbis linguae ===============-->
-            <div class="projects">
+            <div class="projects-grid">
+                <!--============== dynamic machine ===============-->
                 <article class="project-card">
-                    <a href="jaar_1/Orbis_linguae/orbis_linguae.html" class="project-link">
-                        <div class="project-image">
-                            <img src="assets/orbis_linguae_logo_wit.png" alt="Orbis Linguae logo">
+                    <a class="project-link" href="/orbis_linguae/orbis_linguae.html">
+                        <img src="/assets/ball.png" alt="" class="project-image">
+                        
+                        <div class="project-info">
+                            <h3 class="project-title">Dynamic machine</h3>
                         </div>
+                    </a>
+                </article>
+                
+                
+                <!--============== orbis Linguae ===============-->
+                <article class="project-card">
+                    <a class="project-link" href="../victory/victory.html">
+                        <img src="/assets/orbis_liguae.png" alt="" class="project-image">
                         
                         <div class="project-info">
                             <h3 class="project-title">Orbis Linguae</h3>
                         </div>
                     </a>
                 </article>
-                <!--============== victory ===============-->
+                <!--============== Victory ===============-->
                 <article class="project-card">
-                    <a href="jaar_1/victory/victory.html" class="project-link">
-                        
-                        <div class="project-image">
-                            <img src="assets/vinkje_logo_victory%20(wit).png" alt="Het logo van Victory">
-                        </div>
+                    <a class="project-link" href="../victory/victory.html">
+                        <img src="/assets/victory_book_photo.png" alt="" class="project-image">
                         
                         <div class="project-info">
                             <h3 class="project-title">Victory</h3>
                         </div>
                     </a>
                 </article>
-                <!--============== boostbites ===============-->
-                <article class="project-card">
-                    <a href="jaar_1/boostbites/boostbites.html" class="project-link">
-                        
-                        <div class="project-image">
-                            <img src="assets/boostbites_wit.png"
-                                 alt="Zelfgemaakte illustratie van een soda drankje">
-                        </div>
-                        
-                        <div class="project-info">
-                            <h3 class="project-title"> boost bites</h3>
-                        </div>
-                    </a>
-                </article>
+            
             </div>
-            <a href="#projecten" class="cta-button-2">Bekijk alle projecten →</a>
-        
         </div>
+            <a href="projecten/projecten.html" class="cta-button-2">Bekijk alle projecten →</a>
     
     </section>
     
@@ -154,7 +129,7 @@
                 
                 <div class="contact-header">
                     <h2 class="contact-title">Contacteer mij</h2>
-                    <p class="contact-description">Heb je interesse om samen te werken of heb je
+                    <p class="contact-description">Ben je opzoek naar een stagiair of heb je
                         een vraag? Neem gerust contact met mij op.</p>
                 </div>
                 
@@ -172,7 +147,7 @@
                         </div>
                     </div>
                     
-                    <!-- FIX HIER -->
+                    
                     <div class="form-group">
                         <label>Email</label>
                         <input type="email" name="email" required>
@@ -191,127 +166,7 @@
             </div>
         </div>
     </section>
-    
-    
-    <!--footer-->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="nav-logo"><img src="assets/favicon_wit.png" alt="favicon logo"></div>
-                <div class="footer-info">
-                    <div class="footer-nav">
-                        <ul class="nav-list">
-                            <li><a class="nav-link" href="#over-mij">Over mij</a></li>
-                            <li><a class="nav-link" href="#projecten">Projecten</a></li>
-                            <li><a class="nav-link" href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <a href="https://www.instagram.com/Savio_Ferraris/"><img class="contact-icon"
-                                                                         src="/assets/instagram-icoon.png"
-                                                                         alt="Instagram icoon"></a>
-            </div>
-            
-            <div class="footer-bottom">
-                <p class="footer-copy">&copy; 2025 Savio Ferraris</p>
-                <div class="privacy-button">
-                    
-                    <a href="#" onclick="openModal(); return false;">
-                        Privacybeleid
-                    </a>
-                
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    
-    <div id="privacy-modal" class="modal">
-        <div class="modal-content" tabindex="0">
-            
-            <span class="modal-close" onclick="closeModal()">×</span>
-            <h2 class="modal-title">Privacybeleid</h2>
-            <p class="modal-intro">
-                <strong>Privacyrichtlijnen voor Mijn Portfolio</strong>
-                Welkom bij mijn portfolio. Ik waardeer je bezoek en respecteer je privacy.
-                Dit document legt uit hoe ik omga met persoonlijke gegevens die mogelijk worden verzameld
-                wanneer je mijn portfolio gebruikt.
-                Door mijn portfolio te bezoeken, stem je in met deze richtlijnen.
-            </p>
-            <ol class="modal-list">
-                <li>
-                    <strong>Hoe ik je gegevens gebruik</strong>
-                    
-                    <p>
-                        De gegevens die ik verzamel, gebruik ik uitsluitend voor:
-                    
-                    <ul>
-                        <li>het verbeteren van de toegankelijkheid</li>
-                        <li>prestaties en functionaliteit van mijn portfolio</li>
-                        <li> het beantwoorden van vragen via mijn contactformulier of e-mail</li>
-                        <li>en het analyseren van gebruik om de inhoud te optimaliseren.</li>
-                    </ul>
-                    Ik gebruik je gegevens niet voor commerciële doeleinden of marketing zonder jouw
-                    toestemming.
-                    </p>
-                </li>
-                
-                <li>
-                    <strong>Geen verkoop of delen van gegevens</strong>
-                    <p>
-                        Ik verkoop, deel of verhandel je persoonlijke gegevens niet met derden.
-                        Alleen vertrouwde partners, zoals hostingproviders of analytische tools, kunnen toegang
-                        hebben
-                        tot
-                        bepaalde gegevens en zijn verplicht om deze te beschermen.
-                    </p>
-                </li>
-                <li>
-                    <strong>Externe links en ingesloten inhoud</strong>
-                    <p>
-                        Mijn portfolio kan links bevatten naar externe websites of ingesloten inhoud (zoals
-                        video's
-                        en
-                        sociale
-                        mediafeeds). Deze bronnen hebben hun eigen privacybeleid.
-                        Ik raad aan hun richtlijnen te lezen. Ik ben niet verantwoordelijk voor hun omgang met
-                        gegevens.
-                    </p>
-                </li>
-                <li>
-                    <strong>Hoe ik je gegevens bescherm</strong>
-                    <p>
-                        Ik neem technische en organisatorische maatregelen om gegevens te beveiligen tegen
-                        verlies,
-                        misbruik en
-                        ongeoorloofde toegang. Denk aan veilige hosting en versleutelde verbindingen.
-                        Absolute bescherming kan ik echter niet garanderen.
-                    </p>
-                </li>
-                <li>
-                    <strong>Jouw rechten</strong>
-                    <ul>
-                        <li>Toegang vragen.</li>
-                        <li>Gegevens aanpassen of verwijderen.</li>
-                        <li>Bezwaar maken.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Wijzigingen</strong>
-                    <p>
-                        Dit beleid kan aangepast worden. Controleer deze pagina regelmatig. </p>
-                </li>
-            </ol>
-            <p class="modal-contact">
-                Voor vragen of verzoeken, neem contact met mij op via het contactformulier of het volgende email:<br>
-                <strong>email:</strong> savio.ferraris@student.pxl.be
-            </p>
-            <p class="modal-date">Laatst bijgewerkt op: 8/08/2025</p>
-        </div>
-    </div>
-    
-
-
+    <div id="footer-container"></div>
 </main>
 </body>
 </html>

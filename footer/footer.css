@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+.footer {
+
+    position: relative;
+    z-index: 1;
+
+    background: rgba(0, 0, 11, 0.3);
+    padding: 10px 0 10px 0;
+}
+
+.footer-top {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav {
+}
+
+.footer-bottom {
+    display: flex;
+    position: relative;
+}
+
+.footer-copy {
+    margin: 0 auto;
+    font-size: 13px;
+}
+
+
+.privacy-button {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+}
+
+
+.footer-copy,
+.privacy-button a {
+    color: white;
+    font-family: "poppins", sans-serif;
+    text-decoration: none;
+}
+
+.contact-icon {
+    width: 40px;
+    filter: brightness(0) invert(1)
+}
