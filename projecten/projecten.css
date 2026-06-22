@@ -51,49 +51,6 @@ main {
 }
 
 
-.container {
-    padding: 0 20px;
-    max-width: 1250px;
-    margin: 0 auto;
-}
-.nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.nav-logo img {
-    width: 40px;
-}
-.nav-list {
-    display: flex;
-    gap: 30px;
-    font-family: "poppins", sans-serif;
-    font-size: 18px;
-    list-style: none;
-}
-.nav-link {
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-}
-.nav-link:hover {
-    opacity: 0.7;
-}
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-.hamburger span {
-    width: 25px;
-    height: 2px;
-    background: white;
-    display: block;
-}
-
-
-
 
 
 .page-title{
@@ -180,4 +137,84 @@ main {
     margin: 0 auto;
     width: 100px;
     filter: brightness(0) invert(1);
+}
+
+@media (max-width: 768px) {
+
+    .bg-glow1,
+    .bg-glow2 {
+        display: none;
+    }
+
+
+    .bg-glow3 {
+        position: absolute;
+        width: 800px;
+        height: 400px;
+        background: rgb(0, 77, 255);
+        filter: blur(250px);
+    }
+
+    .glow-3 {
+        position: fixed;
+        left: -300px;
+        top: 600px;
+        width: 1000px;
+        height: 1000px;
+        background: rgb(0, 77, 255);
+        border-radius: 50%;
+        filter: blur(250px);
+        z-index: -1;
+    }
+
+    /* Main spacing */
+    main {
+        padding-top: 100px;
+    }
+
+    /* Titel */
+    .page-title {
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+
+    /* 🔥 Grid → 1 kolom */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-bottom: 30px;
+    }
+
+    /* Cards smaller */
+    .project-card,
+    .coming-soon {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    /* Center cards */
+    .projects-grid {
+        justify-items: center;
+    }
+
+    /* Titel in card kleiner */
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    /* Image iets kleiner */
+    .project-image {
+        height: 160px;
+    }
+
+    /* Coming soon spacing */
+    .coming-soon {
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .clock-icon {
+        width: 70px;
+    }
 }

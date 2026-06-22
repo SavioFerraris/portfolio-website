@@ -54,48 +54,6 @@ body {
     margin: 0 auto;
 }
 
-/* Navigation */
-.nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav-logo img {
-    width: 40px;
-}
-
-.nav-list {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    font-size: 18px;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    transition: opacity 0.3s;
-}
-
-.nav-link:hover {
-    opacity: 0.7;
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.hamburger span {
-    display: block;
-    width: 25px;
-    height: 2px;
-    background: white;
-}
-
 /* Hero */
 .project-hero {
     position: relative;
@@ -108,10 +66,8 @@ body {
 .hero-video {
     position: absolute;
     inset: 0;
-
     width: 100%;
     height: 100%;
-
     object-fit: cover; /* 🔥 dit is de key */
     z-index: 0;
 }
@@ -189,4 +145,110 @@ body {
 .project-image {
     width: 700px;
     border-radius: 20px;
+}
+
+@media (max-width: 1024px) {
+    /* tablet styles */
+    .bg-glow1,
+    .bg-glow2 {
+        display: none;
+    }
+
+
+    .bg-glow3 {
+        position: absolute;
+        width: 800px;
+        height: 400px;
+        background: rgb(0, 77, 255);
+        filter: blur(250px);
+    }
+
+    .glow-3 {
+        position: fixed;
+        left: -300px;
+        top: 600px;
+        width: 1000px;
+        height: 1000px;
+        background: rgb(0, 77, 255);
+        border-radius: 50%;
+        filter: blur(250px);
+        z-index: -1;
+    }
+}
+@media (max-width: 768px) {
+
+    .bg-glow1,
+    .bg-glow2 {
+        display: none;
+    }
+
+
+    .bg-glow3 {
+        position: absolute;
+        width: 800px;
+        height: 400px;
+        background: rgb(0, 77, 255);
+        filter: blur(250px);
+    }
+
+    .glow-3 {
+        position: fixed;
+        left: -300px;
+        top: 600px;
+        width: 1000px;
+        height: 1000px;
+        background: rgb(0, 77, 255);
+        border-radius: 50%;
+        filter: blur(250px);
+        z-index: -1;
+    }
+
+    /* Hero aanpassen */
+    .project-hero {
+        height: 40vh;
+        justify-content: center;
+    }
+
+    .hero-content {
+        margin: 0;
+        padding: 0 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-title {
+        font-size: 28px;
+    }
+
+    /* Button */
+    .download-btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .download-container {
+        justify-content: center;
+    }
+
+    /* Content */
+    .project-container {
+        width: 90%;
+        padding: 60px 0 30px;
+        gap: 30px;
+    }
+
+    .project-content {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    /* Images */
+    .project-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .project-images {
+        gap: 30px;
+    }
 }
