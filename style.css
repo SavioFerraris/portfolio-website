@@ -10,8 +10,9 @@ body {
     overflow-x: hidden;
 }
 
-main{
-    padding-top:90px;}
+main {
+    padding-top: 90px;
+}
 
 .bg-glow1 {
     position: absolute;
@@ -71,7 +72,6 @@ main{
 }
 
 
-
 /* ========== Introductie / Voorstelling ========== */
 
 .about {
@@ -100,17 +100,20 @@ main{
     line-height: 1.6;
 }
 
+
+/* Button */
 .cta-button-1 {
     display: inline-block;
-    font-family: "poppins", sans-serif;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #00000b;
+    font-size: 20px;
     font-weight: bold;
-    margin: 40px 0 0 0;
-    background: #FFFFFF;
-    padding: 10px;
-    border-radius: 10px;
     text-decoration: none;
-    color: #000000;
+    border-radius: 5px;
 }
+
 
 .about-image img {
     width: 350px;
@@ -158,12 +161,9 @@ main{
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, max-content));
+    justify-content: center;
     gap: 3rem;
-    row-gap: 5rem;
-    column-gap: 7rem;
-    justify-items: center;
-    margin: 0 0 100px 0;
 }
 
 .project-card {
@@ -222,6 +222,8 @@ main{
     height: 100%;
 }
 
+
+/*button 2*/
 .cta-button-2 {
     display: flex;
     justify-self: center;
@@ -234,8 +236,12 @@ main{
     border-radius: 10px;
     text-decoration: none;
     color: #000000;
+    transition: transform 0.3s ease;
 }
 
+.cta-button-2:hover {
+    transform: scale(1.10);
+}
 
 /* ========== Contact ========== */
 
@@ -347,6 +353,14 @@ main{
     font-size: 14px;
 }
 
+#form-status {
+    margin-top: 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #8cffb5; /* 🔥 lichtgroen */
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
 
 /* ========== Responsive Design voor mobiel ========== */
 
@@ -354,41 +368,36 @@ main{
 @media (max-width: 768px) {
 
 
-    .background {
-        position: fixed;
-        inset: 0;
-        z-index: -1;
-        overflow: hidden;
+    .bg-glow1,
+    .bg-glow2 {
+        display: none;
     }
 
-        .bg-glow1,
-        .bg-glow2,
-        .bg-glow3 {
-            position: absolute;
-            left: 200px;
-            transform: translateX(-50%);
-        }
+
+    .bg-glow3 {
+        position: absolute;
+        width: 800px;
+        height: 400px;
+        background: rgb(0, 77, 255);
+        filter: blur(250px);
+    }
+
+    .glow-3 {
+        position: fixed;
+        left: -300px;
+        top: 600px;
+        width: 1000px;
+        height: 1000px;
+        background: rgb(0, 77, 255);
+        border-radius: 50%;
+        filter: blur(250px);
+        z-index: -1;
+    }
 
 
-
-        .glow-1 {
-            display: none;
-        }
-
-        .glow-2 {
-            top: -200px;
-            transform: translateX(-40%);
-            z-index: -1;
-        }
-
-        .glow-3 {
-            display: none;
-        }
-
-
-        .image-glow {
-            display: none;
-        }
+    .image-glow {
+        display: none;
+    }
 
     .container {
         padding: 0 20px;

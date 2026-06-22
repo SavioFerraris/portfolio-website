@@ -23,8 +23,6 @@ body {
     background: rgb(0, 77, 255);
     filter: blur(250px);
 }
-
-
 .glow-1 {
     top: -100px;
     left: -700px; /* mag nu */
@@ -48,16 +46,55 @@ body {
 
 
 }
-
 main {
     padding-top: 150px;
 }
 
+
 .container {
-    width: 100%;
+    padding: 0 20px;
     max-width: 1250px;
     margin: 0 auto;
 }
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo img {
+    width: 40px;
+}
+.nav-list {
+    display: flex;
+    gap: 30px;
+    font-family: "poppins", sans-serif;
+    font-size: 18px;
+    list-style: none;
+}
+.nav-link {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.nav-link:hover {
+    opacity: 0.7;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.hamburger span {
+    width: 25px;
+    height: 2px;
+    background: white;
+    display: block;
+}
+
+
+
+
 
 .page-title{
     padding: 0 0 50px 0;
@@ -65,16 +102,13 @@ main {
     font-size: 25px;
     font-family: 'poppins', sans-serif;
 }
-
-
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, max-content));
+    justify-content: center;
     gap: 3rem;
     row-gap: 5rem;
-    column-gap: 7rem;
-    justify-items: center;
-    margin: 0 0 100px 0;
+    padding: 0 0 40px 0;
 }
 
 .project-card {

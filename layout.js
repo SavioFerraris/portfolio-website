@@ -51,9 +51,7 @@ const isSubPage = window.location.pathname.includes("projecten");
 
 const basePath = isSubPage ? "../" : "";
 
-loadHTML("header-container", basePath + "header/header.html");
-loadHTML("footer-container", basePath + "footer/footer.html");
-loadHTML("modal-container", basePath + "modal/modal.html", initModal);
+loadHTML("modal-container", basePath + "/modal/modal.html", initModal);
 
 
 

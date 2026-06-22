@@ -1,3 +1,4 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -29,10 +30,10 @@ body {
 }
 
 .glow-1 {
-    top: 120px;
+    top: 20px;
     right: -700px;
     transform: rotate(45deg);
-    z-index: 0;
+    z-index: 1;
 }
 
 .glow-3 {
@@ -53,7 +54,6 @@ body {
     max-width: 1250px;
     margin: 0 auto;
 }
-
 
 /* header */
 .nav-container {
@@ -104,7 +104,7 @@ body {
     align-items: center;
     height: 50vh;
 
-    background: url("../assets/victory_book_photo.png") center / cover no-repeat;
+    background: url("../assets/custom_sneaker_pic.jpg") center / cover no-repeat;
 }
 
 .project-hero::before {

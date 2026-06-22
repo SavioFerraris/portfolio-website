@@ -64,3 +64,50 @@
     width: 40px;
     filter: brightness(0) invert(1)
 }
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    /* Top gedeelte */
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* Navigatie stacken */
+    .footer .nav-list {
+        display: none;
+    }
+
+    /* Logo kleiner */
+    .nav-logo img {
+        width: 30px;
+    }
+
+    /* Instagram icoon */
+    .contact-icon {
+        width: 30px;
+    }
+
+    /* Bottom gedeelte */
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Privacy knop resetten */
+    .privacy-button {
+        position: static;
+    }
+
+    .footer-copy {
+        margin: 0;
+    }
+}

@@ -3,69 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vicotry</title>
+    <title>Victory</title>
     <link rel="stylesheet" href="victory.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../modal/modal.css">
+    <script src="../script.js"></script>
+    <script src="../layout.js"></script>
+
 </head>
 <body>
+
+<div class="background">
+    <div class="bg-glow1 glow-1"></div>
+    <div class="bg-glow2 glow-2"></div>
+    <div class="bg-glow3 glow-3"></div>
+</div>
+
 <header>
-    <nav class="nav-bar">
-        <div class="titelEnIcoon">
-            <a href=../index.html#victory><img src="/assets/pijl-icoon.png" alt="pijl icoon"></a>
-            <p class="head-titel">Terug</p>
-        </div>
-    </nav>
+    <div class="container">
+        <nav class="nav-container">
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <img src="/assets/favicon_wit.png" alt="favicon logo">
+                </a>
+            </div>
+            
+            <ul class="nav-list">
+                <li><a class="nav-link" href="../index.html">Home</a></li>
+                <li><a class="nav-link" href="../projecten/projecten.html">Projecten</a></li>
+                <li><a class="nav-link" href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-
 <main>
-    <section class="project-container">
-        <h2 class="titel-project">Victory rebranding</h2>
-        <p class="paragraaf">
-            Tijdens het tweede semester werkte ik samen met drie andere designers en vier programmeurs aan een
-            rebrandingproject voor Victory, een bedrijf dat jongeren en schoolverlaters begeleidt bij hun eerste stappen
-            op
-            de arbeidsmarkt. Victory fungeert als een soort uitzendbureau, maar gaat een stap verder door jongeren
-            actief te
-            ondersteunen in hun persoonlijke en professionele ontwikkeling. Daarbij ligt de nadruk op het werken met
-            Z-machines, geavanceerde technologieën waarmee jongeren praktijkervaring opdoen in een innovatieve en
-            leerzame
-            omgeving.
-            <br>
-            <br>
-            Mijn bijdrage begon met een grondige researchfase, waarin ik me focuste op benchmarking. Ik onderzocht de
-            concurrentie, bracht in kaart wat zij beter doen, waar onze zwakke punten lagen en op welke manier zij een
-            bedreiging vormen voor Victory. Deze analyse vormde de basis voor onze strategische aanpak en gaf richting
-            aan
-            de creatieve fase die daarop volgde.
-            <br>
-            <br>
-            Vanuit de inzichten uit mijn onderzoek ontwikkelde ik een doordachte visuele identiteit. Ik ontwierp een
-            nieuw
-            logo, stelde een eigentijds kleurenpalet samen en koos een typografie die de kernwaarden van Victory
-            weerspiegelt en aansluit bij de beoogde doelgroep. Dankzij regelmatige sprint reviews kon ik tussentijds
-            gerichte feedback verwerken en mijn ontwerp stap voor stap verfijnen. Tijdens de derde sprint finaliseerde
-            ik
-            alle visuele elementen en zette ik de puntjes op de i, zodat alles klaar was voor presentatie en
-            implementatie.
-            <br>
-            <br>
-            In het begin vond ik het best uitdagend om in een groep te werken, aangezien dit volledig nieuw voor mij
-            was.
-            Tijdens de eerste twee sprints liep ik tegen verschillende moeilijkheden aan. Ik stelde hoge eisen aan
-            mezelf en
-            legde de lat te hoog, wat het geheel soms overweldigend maakte. Gaandeweg leerde ik die druk loslaten en
-            begon
-            ik steeds meer vertrouwen te krijgen in mijn eigen kunnen én in de samenwerking met het team. Ik voelde me
-            steeds vrijer om ideeën te delen en mijn rol actiever op te nemen. Uiteindelijk raakte ik echt in de flow en
-            groeide het groepswerk uit tot een bijzonder leerrijke en waardevolle ervaring.
-            <br>
-            <br>
-            </p>
+    <div id="modal-container"></div>
+    
+    <section class="project-hero">
+        <div class="hero-content">
+            <h2 class="project-title">Rebranding Victory</h2>
+            <div class=" download-container">
+                <a href="../assets/brandbook_victory.pdf" class="download-btn" download> Download</a>
+            </div>
+        </div>
     </section>
-    <div class="foto-brandbook">
-        <img class="brandbook" src="../../assets/victory_book.png" alt="hoofdpagina van mijn brandbook">
-    </div>
+    
+    
+    <section class="project-container">
+        <div class="project-content">
+            <p class="paragraaf">
+                Tijdens het tweede semester werkte ik samen met een team van designers en programmeurs aan een
+                rebrandingproject voor Victory, een organisatie die jongeren begeleidt naar de arbeidsmarkt. Mijn focus
+                lag op benchmarking, waarbij ik concurrenten analyseerde en belangrijke inzichten verzamelde voor onze
+                strategie.
+            <br>
+            <br>
+                Op basis hiervan ontwierp ik een nieuwe visuele identiteit, inclusief logo, kleurenpalet en typografie,
+                afgestemd op de doelgroep. Door iteratieve feedback tijdens sprint reviews kon ik mijn werk verfijnen
+                tot een consistent eindresultaat.
+            </p>
+        </div>
+        
+        
+        <div class="project-images">
+            <img class="project-image" src="../assets/logo_victory_wit.png" alt="sociale mesia post">
+            <img class="project-image" src="../assets/victory_mockups.png" alt="sociale mesia post">
+        </div>
+    
+    </section>
 </main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <img src="/assets/favicon_wit.png" alt="favicon logo">
+                </a>
+            </div>
+            <div class="footer-info">
+                <div class="footer-nav">
+                    <ul class="nav-list">
+                        <li><a class="nav-link" href="../index.html">Home</a></li>
+                        <li><a class="nav-link" href="../projecten/projecten.html">Projecten</a></li>
+                        <li><a class="nav-link" href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="https://www.instagram.com/Savio_Ferraris/"><img class="contact-icon"
+                                                                     src="/assets/instagram-icoon.png"
+                                                                     alt="Instagram icoon"></a>
+        </div>
+        
+        <div class="footer-bottom">
+            <p class="footer-copy">&copy; 2025 Savio Ferraris</p>
+            <div class="privacy-button">
+                
+                <a href="#" onclick="openModal(); return false;">
+                    Privacybeleid
+                </a>
+            
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 </body>
