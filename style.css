@@ -344,7 +344,8 @@ main {
 /* hover */
 
 .contact-form button:hover {
-    background: #3a70e0;
+    opacity: 0.7;
+    color: black;
 }
 
 /* status text */
