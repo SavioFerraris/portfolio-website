@@ -163,16 +163,24 @@ body {
     text-align: justify;
 }
 
+.project-citaat{
+    padding: 0 0 40px 0;
+}
+
+.project-citaat-text{
+    font-size: 45px;
+    font-weight: bolder;
+}
+
 /* Images */
 .project-images {
     display: flex;
-    flex-direction: column;
     gap: 50px;
     align-items: center;
 }
 
 .project-image {
-    width: 700px;
+    width: 600px;
     border-radius: 20px;
 }
 
@@ -296,11 +304,20 @@ body {
         padding: 60px 0 30px;
         gap: 30px;
     }
+    .project-citaat {
+        padding: 0 0 40px 0;
+    }
+
+    .project-citaat-text{
+        font-weight: bolder;
+        font-size: 45px;
+    }
 
     .project-content {
         font-size: 18px;
         text-align: justify;
     }
+
 
     /* Images */
     .project-image {

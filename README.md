@@ -1,2 +1,0 @@
-# portfolio-website
-Mijn portfolio
