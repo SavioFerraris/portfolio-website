@@ -262,8 +262,12 @@ body {
     }
 
     .project-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 30px;
         flex-direction: column;
+
     }
 
     .project-video {
