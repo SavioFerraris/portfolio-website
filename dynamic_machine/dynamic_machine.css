@@ -263,5 +263,12 @@ body {
 
     .project-images {
         gap: 30px;
+        flex-direction: column;
+    }
+
+    .project-video {
+        max-width: 500px;
+        max-height: 500px;
+        border-radius: 10px;
     }
 }
