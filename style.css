@@ -116,6 +116,7 @@ main {
     transition: transform 0.3s ease;
 
 }
+
 .cta-button-1:hover {
     transform: scale(1.10);
 }
@@ -161,8 +162,64 @@ main {
     font-weight: bold;
 }
 
+/*programmas*/
+.programma-slider {
+    overflow: hidden;
+    width: 100%;
+}
+.programma-section {
+    margin: 150px 0 0 0;
+    padding: 30px 0 30px 0;
+}
+.programma-title{
+color: white;
+font-size: 30px;
+font-family: "poppins", sans-serif;
+}
 
-/* ========== projecten ========== */
+
+.programma-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.programma-name {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.programmas {
+    display: flex;
+    gap: 200px;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+
+.programmas:hover{
+    animation-play-state: paused;
+}
+.programma-image {
+    width: 60px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50% - 100px));
+    }
+}
+
+
+
+        /* ========== projecten ========== */
 
 .projects-grid {
     display: grid;
@@ -198,7 +255,6 @@ main {
     display: block;
 }
 
-
 .project-info {
     height: 150px;
     display: flex;
@@ -207,7 +263,6 @@ main {
     padding-top: 18px;
 
 }
-
 
 .project-title {
     color: white;
@@ -234,8 +289,8 @@ main {
     justify-self: center;
     font-family: "poppins", sans-serif;
     font-weight: bold;
-    font-size: 30px;
-    margin: 100px 0 150px 0;
+    font-size: 20px;
+    margin: 50px 0 150px 0;
     background: #FFFFFF;
     padding: 10px;
     border-radius: 10px;
