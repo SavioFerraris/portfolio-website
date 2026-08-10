@@ -202,10 +202,6 @@ main {
     animation: scroll 30s linear infinite;
 }
 
-.programmas:hover {
-    animation-play-state: paused;
-}
-
 .programma-image {
     width: 60px;
 }
