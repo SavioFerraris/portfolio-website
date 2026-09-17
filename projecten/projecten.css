@@ -139,6 +139,7 @@ main {
     background: rgba(160, 182, 255, 0.3);
     flex-direction: column;
     width: 350px;
+    height: 340px;
     border-radius: 18px;
     overflow: hidden;
     gap: 40px;
